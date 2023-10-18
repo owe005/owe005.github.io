@@ -68,3 +68,53 @@ section h2 {
     color: white;
     padding: 20px;
 }
+
+/* Custom Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Icons */
+#skills i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/* Enhancing overall appearance */
+body {
+    background-color: #fafafa;
+    color: #333;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 30px;
+}
+
+header {
+    background-image: linear-gradient(to bottom right, #50b3a2, #78c4d4);
+}
+
+#contact {
+    background-color: #50b3a2;
+}
+
+#contact a {
+    color: #fff;
+}
