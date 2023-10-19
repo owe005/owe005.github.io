@@ -38,7 +38,7 @@ nav ul li a:hover {
 
 /* Header */
 header {
-    background-color: #50b3a2;
+    background-color: linear-gradient(45deg, #4298ee, #000000);
     color: white;
     text-align: center;
     padding: 60px 0;
@@ -66,7 +66,7 @@ section h2 {
 
 /* Contact */
 #contact {
-    background-color: #333;
+    background-color: linear-gradient(45deg, #4298ee, #000000);
     color: white;
     padding: 20px;
 }
@@ -108,7 +108,7 @@ header {
 }
 
 #contact {
-    background-color: #50b3a2;
+    background-color: linear-gradient(45deg, #4298ee, #000000);
 }
 
 #contact a {
