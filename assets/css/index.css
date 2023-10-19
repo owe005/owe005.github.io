@@ -62,26 +62,47 @@ section a:hover {
 }
 
 #contact {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 20px;
+    background-color: #ffffff;
     border-radius: 10px;
-    margin: 0 auto;
-    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 30px auto;
+    width: 10%; 
+    height: 10%;
+    max-width: 1000px; 
+    padding: 30px;
+    color: #000; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #000;
+    border-bottom: 2px solid #4298ee;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center; 
+}
+
+#contact .contact-item {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; 
 }
 
 #contact a {
-    display: block; 
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
+    color: #4298ee;  
     text-decoration: none;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    display: block;
 }
 
 #contact a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    color: #3277ce;
 }
 
 h1, h2, h3, h4, h5, h6 {
