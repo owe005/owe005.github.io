@@ -15,9 +15,9 @@ body {
 
 /* Navigation */
 nav ul {
-    background-color: #333;
+    background-color: linear-gradient(45deg, #4298ee, #000000);
     overflow: hidden;
-    color: white;
+    color: #333;
     padding: 0 20px;
 }
 
