@@ -36,7 +36,7 @@ header h2 {
 }
 
 section {
-    background-color: #ffffff;
+    background-color: #ffffff; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     margin: 30px auto;
@@ -45,13 +45,20 @@ section {
     color: #000;
 }
 
-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #4298ee;
-    padding-bottom: 10px;
-    display: inline-block;
-    color: #000;
+/* Headers inside sections */
+section h2, section h3, section h4 {
+    color: #000; 
+}
+
+/* Links inside sections */
+section a {
+    color: #4298ee; 
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: #3277ce; 
+    text-decoration: none;
 }
 
 #contact {
