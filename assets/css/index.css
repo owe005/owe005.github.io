@@ -1,92 +1,85 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* using Roboto as mentioned in your custom fonts */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background: linear-gradient(45deg, #4298ee, #000000);
-    color: #333;
+    color: #eee;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.6;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Navigation */
-nav ul {
-    background: linear-gradient(45deg, #4298ee, #000000);
-    overflow: hidden;
-    color: #333;
-    padding: 0 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s, transform 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f4f4f4;
-    transform: scale(1.05);
-}
-
-/* Header */
 header {
-    background: linear-gradient(45deg, #4298ee, #000000);
+    background: transparent;
     color: white;
     text-align: center;
     padding: 60px 0;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 header h2 {
     margin-top: 10px;
+    font-weight: 300;
 }
 
-/* Sections */
 section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 30px auto;
     max-width: 800px;
     padding: 30px;
+    backdrop-filter: blur(10px); 
 }
 
 section h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 20px;
+    border-bottom: 2px solid #4298ee;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-/* Contact */
 #contact {
-    background: linear-gradient(45deg, #4298ee, #000000);
+    background: transparent;
+    border: 2px solid white;
     color: white;
     padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 #contact a {
-    color: linear-gradient(45deg, #4298ee, #000000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    display: block; 
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
-/* Fonts */
+#contact a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Skills Icons */
 #skills i {
     margin-right: 10px;
     font-size: 1.5em;
