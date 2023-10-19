@@ -6,7 +6,7 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     background: linear-gradient(45deg, #4298ee, #000000);
-    color: #333;
+    color: #eee;
     font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -16,14 +16,14 @@ body {
 }
 
 header {
-    background: transparent; 
+    background: transparent;
     color: white;
     text-align: center;
     padding: 60px 0;
 }
 
 header h1 {
-    font-size: 3em; 
+    font-size: 3em;
     border-bottom: 2px solid white;
     display: inline-block;
     padding-bottom: 10px;
@@ -32,16 +32,17 @@ header h1 {
 
 header h2 {
     margin-top: 10px;
-    font-weight: 300;  
+    font-weight: 300;
 }
 
 section {
-    background-color: #fff; 
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     margin: 30px auto;
     max-width: 800px;
     padding: 30px;
+    color: #000;
 }
 
 section h2 {
@@ -50,22 +51,13 @@ section h2 {
     border-bottom: 2px solid #4298ee;
     padding-bottom: 10px;
     display: inline-block;
-}
-
-section a {
-    color: #4298ee;  
-    text-decoration: none; 
-    transition: color 0.3s ease;
-}
-
-section a:hover {
-    color: #000000;  
+    color: #000;
 }
 
 #contact {
-    background-color: #fff;  
-    color: #333;  
-    border: 2px solid #333; 
+    background: transparent;
+    border: 2px solid white;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
@@ -73,17 +65,15 @@ section a:hover {
 }
 
 #contact a {
-    display: block;  
+    display: block; 
     text-align: center;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: #4298ee;  
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 #contact a:hover {
-    color: #000000;  
     background: rgba(255, 255, 255, 0.1);
 }
 
