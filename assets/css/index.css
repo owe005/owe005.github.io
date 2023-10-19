@@ -1,8 +1,7 @@
-/* Basic Reset */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* using Roboto as mentioned in your custom fonts */
 }
 
 body {
@@ -15,7 +14,7 @@ body {
 
 /* Navigation */
 nav ul {
-    background-color: linear-gradient(45deg, #4298ee, #000000);
+    background: linear-gradient(45deg, #4298ee, #000000);
     overflow: hidden;
     color: #333;
     padding: 0 20px;
@@ -29,23 +28,23 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
     color: #f4f4f4;
+    transform: scale(1.05);
 }
 
 /* Header */
 header {
-    background-color: linear-gradient(45deg, #4298ee, #000000);
+    background: linear-gradient(45deg, #4298ee, #000000);
     color: white;
     text-align: center;
     padding: 60px 0;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
 }
 
@@ -55,8 +54,12 @@ header h2 {
 
 /* Sections */
 section {
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 30px;
 }
 
 section h2 {
@@ -66,51 +69,25 @@ section h2 {
 
 /* Contact */
 #contact {
-    background-color: linear-gradient(45deg, #4298ee, #000000);
+    background: linear-gradient(45deg, #4298ee, #000000);
     color: white;
     padding: 20px;
 }
 
-/* Custom Fonts */
-body {
-    font-family: 'Roboto', sans-serif;
+#contact a {
+    color: linear-gradient(45deg, #4298ee, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+/* Fonts */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
-}
-
-a {
-    transition: color 0.3s, transform 0.3s;
-}
-
-a:hover {
-    transform: scale(1.05);
 }
 
 /* Skills Icons */
 #skills i {
     margin-right: 10px;
     font-size: 1.5em;
-}
-
-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 30px;
-}
-
-header {
-    background-image: linear-gradient(45deg, #4298ee, #000000);
-}
-
-#contact {
-    background-color: linear-gradient(45deg, #4298ee, #000000);
-}
-
-#contact a {
-    color: linear-gradient(45deg, #4298ee, #000000);
 }
