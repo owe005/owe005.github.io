@@ -112,5 +112,5 @@ header {
 }
 
 #contact a {
-    color: #fff;
+    color: linear-gradient(45deg, #4298ee, #000000);
 }
