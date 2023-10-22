@@ -1,17 +1,21 @@
 $(document).ready(function() {
-    // Load the about section by default when the page loads
-    $('#main-content').load('pages/about.html');
+    $('#home').load('pages/home.html');
+    $('#about').load('pages/about.html');
+    $('#projects').load('pages/projects.html');
+    $('#resume').load('pages/resume.html');
+    $('#skills').load('pages/skills.html');
+    
 
-    // Event listener for navigation links
+
     $('.nav-link').on('click', function(e) {
         e.preventDefault();
         
-        // Get the data attribute of the clicked link to determine which page to load
-        let page = $(this).data('page');
-        $('#main-content').load(`pages/${page}.html`);
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000);  // 1000ms = 1 second for the scroll
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", function() {
     let skillBars = document.querySelectorAll("[data-inviewport='bar-fill']");
@@ -29,3 +33,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     skillBars.forEach(skillBar => observer.observe(skillBar));
 });
+
