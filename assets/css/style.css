@@ -112,10 +112,17 @@ a.project_button {
     color: #333333;
 }
 
-.d-grey h5,h3 {
+/* For projects.html */
+.d-grey h5 {
     text-align: center;
     color: #333333;
 }
+
+/* For resume.html */
+.resume-content h5 {
+    text-align: left;
+}
+
 .img_center{
     align-self: center;
 }
