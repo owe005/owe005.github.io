@@ -8,3 +8,5 @@ TODO:
 - fix summarizer and spamdetector theme, make consistent with rest of site
 - clean up code
 - animations on skill bars??
+
+- **MOBILE UI FIX!!!!**
