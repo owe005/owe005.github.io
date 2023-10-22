@@ -1,0 +1,323 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.7;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+main {
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+
+.tm-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    margin-top: -5px;
+}
+  
+.tm-navbar.scroll {
+    background-color: white;
+    border-bottom: 1px solid #e9ecef;
+}
+  
+.tm-navbar-logo {
+    padding-top:10px;
+    content: url(../img/white-icon-logo.png);
+    height: 75px;
+}
+  
+.tm-navbar-logo.scroll {
+    content: url(../img/black-icon-logo.png);
+}
+  
+.navbar-brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.navbar-brand:hover,
+.tm-navbar.scroll .navbar-brand:hover {
+    color: #808080;
+}
+  
+.tm-navbar.scroll .navbar-brand {
+    color: #8f8f8f;
+}
+  
+.nav-item {
+    list-style: none;
+    font-family: NexaBold;
+}
+  
+.tm-nav-link {
+    color: white;
+}
+  
+.tm-navbar.scroll .tm-nav-link {
+    color: #8f8f8f;
+}
+  
+.tm-navbar.scroll .tm-nav-link:hover,
+.tm-navbar.scroll .tm-nav-link.current,
+
+.tm-nav-link:hover {
+    color: #333333;
+}
+  
+.navbar-toggler {
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+.navbar-toggler-icon {
+    color: white;
+    padding-top: 6px;
+}
+  
+.tm-navbar.scroll .navbar-toggler {
+    border: 1px solid #8f8f8f;
+}
+  
+.tm-navbar.scroll .navbar-toggler-icon {
+    color: #8f8f8f;
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1275px;
+    }
+  
+    .tm-container-gallery {
+      max-width: 1290px;
+    }
+  
+    .tm-container-contact {
+      max-width: 1063px;
+    }
+}
+
+.project_buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  
+a.project_button{
+    background-color: rgb(175, 175, 175);
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  
+    text-decoration: none;
+    color: initial;
+  
+    padding:10px;
+    margin: 10px;
+    border:None;
+    border-radius: 10px;
+    width: 20%; 
+    min-width: 150px; 
+    text-align: center; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#project_img{
+    max-width: 150px;
+    width: 33%;
+    padding-bottom: 20px;
+}
+
+.d-grey{
+    color: #333333;
+}
+
+.img_center{
+    align-self: center;
+}
+
+.tm-section-pad-top {
+    padding-top: 135px;
+}
+
+.tm-section-title {
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+
+.tm-underline {
+    border-top: 2px solid white;
+    height: 8px;
+    width: 100%;
+}
+
+.tm-text-primary {
+    color: #000000;
+}
+
+/* Skills Bar */
+.skill_bar {
+    background-color: #e6e6e6;  /* Light grey background to show the portion not filled */
+    border-radius: 5px;         /* Slight rounding for a smoother appearance */
+    overflow: hidden;           /* Ensure content inside the bar doesn't go outside */
+    height: 25px;               /* Height of the skill bar */
+}
+
+[data-inviewport="bar-fill"] {
+    background-color: #474444;  /* Default bar fill color */
+    height: 100%;               /* Fill the entire height of the skill_bar */
+    display: flex;              /* To vertically center the text */
+    align-items: center;        /* Vertical centering */
+    justify-content: flex-end;
+    padding-right: 10px;         /* Some spacing for the text */
+    color: white;            /* Text color inside the bar */
+    font-size: 14px;
+}
+
+/* Enhancements for the resume layout */
+
+/* Overall container styling */
+.container.tm-container-gallery {
+    background-color: #f4f4f4;  /* Slight grey background for contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience and Education sections */
+.col-sm-12.col-md-6.d-grey {
+    padding: 20px;
+    background-color: #fff;  /* White background for each column for a card-like appearance */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual experience and education entries */
+h4 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+h5 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+hr {
+    border-top: 2px solid #e6e6e6;
+    margin: 20px 0;
+}
+
+/* Download CV buttons at the bottom */
+a.resume_button {
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+a.resume_button:hover {
+    background-color: #000000;
+}
+
+/* Icon styling */
+ion-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Enhancements for spacing and visual separation */
+.tm-section-title {
+    margin-bottom: 30px;  /* More spacing after the section title for separation */
+}
+
+/* Adjusting alignment for list items inside the resume sections */
+.col-sm-12.col-md-6.d-grey ul {
+    padding-left: 20px;  /* Adjust the left padding to align the list items properly */
+}
+
+/* Flexbox styling for the row containing project tiles */
+.row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;  /* Spacing between project tiles */
+}
+
+/* On smaller screens (less than 768px), the projects will stack vertically */
+@media (max-width: 768px) {
+    .tile {
+        max-width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
