@@ -1,3 +1,10 @@
+/* Global reset for consistent styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
@@ -7,7 +14,7 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 body {
-    background-image: url('../img/background.png');
+    background-image: url('../img/3492868.gif');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 70px;
@@ -64,52 +71,35 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Simplified media query */
 @media (min-width: 1200px) {
     .container {
-      max-width: 1275px;
-    }
-  
-    .tm-container-gallery {
-      max-width: 1290px;
-    }
-  
-    .tm-container-contact {
-      max-width: 1063px;
+        max-width: 1275px;
     }
 }
 
-.project_buttons{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-  
-  
-a.project_button{
-    background-color: rgb(175, 175, 175);
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-  
+a.project_button {
+    background-color: #000000;
+    color: #fff;
     text-decoration: none;
-    color: initial;
-  
-    padding:10px;
+    padding: 10px;
     margin: 10px;
-    border:None;
+    border: none;
     border-radius: 10px;
-    width: 20%; 
-    min-width: 150px; 
-    text-align: center; 
+    min-width: 150px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    
+    /* Flexbox properties for centering */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
 }
 
 #project_img{
@@ -222,11 +212,40 @@ a.resume_button:hover {
     background-color: #000000;
 }
 
-/* Icon styling */
 ion-icon {
     vertical-align: middle;
     margin-right: 10px;
-    font-size: 1.2rem;
+    font-size: 3rem; 
+    color: #ffffff; 
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0 20px; 
+    padding: 10px;  
+    border-radius: 50%; 
+    transition: background-color 0.3s;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; 
+}
+
+
+
+.icon-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight hover effect */
+}
+
+/* For centering the links */
+.col-sm-12.col-md-5.text-center.d-grey {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Enhancements for spacing and visual separation */
@@ -264,6 +283,7 @@ ion-icon {
 
 .landing-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh; /* Adjust as needed */
